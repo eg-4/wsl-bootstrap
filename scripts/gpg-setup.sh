@@ -110,7 +110,7 @@ EOF
   gpg --export-ownertrust > "$EXPORT_DIR/ownertrust-${GIT_USER_EMAIL}.txt" 2>/dev/null
   log_success "信頼度設定をエクスポート: $EXPORT_DIR/ownertrust-${GIT_USER_EMAIL}.txt"
 
-  log_warn "⚠️  秘密鍵ファイルはリポジトリにコミットしないでください"
+  log_warn "秘密鍵ファイルはリポジトリにコミットしないでください"
 fi
 
 log_success "GPG セットアップが完了しました"

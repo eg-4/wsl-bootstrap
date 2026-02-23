@@ -81,7 +81,7 @@ log_success "SSH キーをエクスポート: $EXPORT_DIR/"
 log_info "公開鍵の内容："
 cat "$EXPORT_DIR/id_ed25519.pub"
 
-log_warn "⚠️  秘密鍵ファイルはリポジトリにコミットしないでください"
+log_warn "秘密鍵ファイルはリポジトリにコミットしないでください"
 
 log_success "SSH セットアップが完了しました"
 echo
