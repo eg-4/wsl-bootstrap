@@ -21,8 +21,8 @@ sudo apt-get remove -qq -y \
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 
-sudo rm /etc/apt/sources.list.d/docker.sources
-sudo rm /etc/apt/keyrings/docker.asc
+sudo rm -f /etc/apt/sources.list.d/docker.sources
+sudo rm -f /etc/apt/keyrings/docker.asc
 
 log_info "事前必要パッケージをインストール中..."
 sudo apt-get update -qq
